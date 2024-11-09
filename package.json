@@ -1,0 +1,30 @@
+{
+  "name": "vue-hono-starter",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix",
+    "backend:dev": "pnpm --filter backend dev",
+    "frontend:dev": "pnpm --filter frontend dev",
+    "prepare": "simple-git-hooks",
+    "release": "bumpp"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.8.0",
+    "@types/node": "^22.9.0",
+    "bumpp": "^9.8.1",
+    "eslint": "^9.14.0",
+    "lint-staged": "^15.2.10",
+    "simple-git-hooks": "^2.11.1"
+
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

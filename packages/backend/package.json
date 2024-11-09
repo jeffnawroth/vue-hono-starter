@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.5",
+    "hono": "^4.6.9"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
