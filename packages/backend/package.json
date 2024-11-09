@@ -9,6 +9,7 @@
     "hono": "^4.6.9"
   },
   "devDependencies": {
+    "dotenv": "^16.4.5",
     "tsx": "^4.19.2"
   }
 }
